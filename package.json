@@ -1,0 +1,30 @@
+{
+  "name": "friends-with-shoes",
+  "version": "1.0.0",
+  "description": "Friends with Shoes",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CindySchalit/friends-with-shoes.git"
+  },
+  "keywords": [],
+  "author": "CindySchalit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CindySchalit/friends-with-shoes/issues"
+  },
+  "homepage": "https://github.com/CindySchalit/friends-with-shoes#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "http": "^0.0.0",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

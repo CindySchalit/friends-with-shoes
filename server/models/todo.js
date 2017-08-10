@@ -1,9 +1,11 @@
-'use strict';
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
   const Todo = sequelize.define('Todo', {
-    title: DataTypes.STRING,
-    allowNull: false,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   }, {
     classMethods: {
       associate: (models) => {
@@ -13,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         })
       }
     }
-  });
-  return Todo;
-};
+  })
+
+  return Todo
+}

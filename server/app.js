@@ -1,18 +1,29 @@
+const path = require('path')
 const express = require('express')
-const logger = require('morgan')
+const morgan = require('morgan')
 const bodyParser = require('body-parser')
 
 const app = express()
 
-app.use(logger('dev'))
+app.use(morgan('dev'))
+
+app.use(express.static(path.join(__dirname, '..', 'public')))
+
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.use('/api', require('./api'))
+app.use( (req, res, next) => {
+  return path.extname(req.path).length > 0
+  ? res.state(404).send('Not found')
+  : next()
+})
 
 app.get('*', (req, res, next) => {
   res.status(200).send({ message: 'Hello World!' })
 })
 
-app.use(function (err, req, res, next) {
+app.use( (err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send('Something broke!')
 })

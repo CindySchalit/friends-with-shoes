@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/api', require('./api'))
 app.use( (req, res, next) => {
   return path.extname(req.path).length > 0
-  ? res.state(404).send('Not found')
+  ? res.status(404).send('Not found')
   : next()
 })
 

@@ -23,5 +23,9 @@ module.exports = {
       }
     }]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  devServer: {
+    compress: true,
+    disableHostCheck: true
+  }
 }

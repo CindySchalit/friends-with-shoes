@@ -1,0 +1,28 @@
+# Packages
+node_modules/*
+
+# Compiled JS
+public/bundle.js
+public/bundle.js.map
+
+# Temp caches
+.eslintcache
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Vim swap files
+*.sw?
+
+# IDE files
+.idea
+.vscode

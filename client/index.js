@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Home from './components/Home.jsx'
+
+import App from './components/App.jsx'
 
 ReactDOM.render((
     <BrowserRouter>
-      <Route path="/" component={ Home } />
+      <Route path="/" component={ App } />
     </BrowserRouter>
   ),
   document.getElementById('root')

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 import Home from './Home.jsx'
+import About from './About.jsx'
 import Shoes from './Shoes.jsx'
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
       <ul>
         <li>
           <nav>
-            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
           </nav>
         </li>
         <li>
@@ -20,12 +21,10 @@ const App = () => {
           </nav>
         </li>
       </ul>
-      <div>
-        <Route path="/home" component={ Home } />
-      </div>
-      <div>
-        <Route path="/shoes" component={ Shoes } />
-      </div>
+      <Redirect to="/home" push />
+      <Route path="/home" component={ Home } />
+      <Route path="/about" component={ About } />
+      <Route path="/shoes" component={ Shoes } />
     </div>
   )
 }

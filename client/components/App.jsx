@@ -13,19 +13,19 @@ const App = () => {
           <nav>
             <Link to="/home">Home</Link>
           </nav>
-          <div>
-            <Route path="/home" component={ Home } />
-          </div>
         </li>
         <li>
           <nav>
             <Link to="/shoes">Shoes</Link>
           </nav>
-          <div>
-            <Route path="/shoes" component={ Shoes } />
-          </div>
         </li>
       </ul>
+      <div>
+        <Route path="/home" component={ Home } />
+      </div>
+      <div>
+        <Route path="/shoes" component={ Shoes } />
+      </div>
     </div>
   )
 }

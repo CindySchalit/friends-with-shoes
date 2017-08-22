@@ -20,7 +20,7 @@ app.use( (req, res, next) => {
 })
 
 app.get('*', (req, res, next) => {
-  res.status(200).send({ message: 'Hello World!' })
+  res.status(200).send({ message: 'Hello from the back end!' })
 })
 
 app.use( (err, req, res, next) => {

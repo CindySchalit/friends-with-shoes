@@ -6,6 +6,8 @@ import Home from './Home.jsx'
 import About from './About.jsx'
 import Shoes from './Shoes.jsx'
 
+import styles from '../../public/styles/navBar.css'
+
 const App = () => {
   return (
     <div>

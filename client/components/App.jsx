@@ -6,7 +6,7 @@ import Home from './Home.jsx'
 import About from './About.jsx'
 import Shoes from './Shoes.jsx'
 
-import styles from '../../public/styles/navBar.css'
+import styles from './styles/navBar.css'
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           </nav>
         </li>
       </ul>
+      <br></br>
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/about" component={ About } />

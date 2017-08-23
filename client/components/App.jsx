@@ -14,17 +14,17 @@ const App = () => {
       <ul>
         <li>
           <nav>
-            <Link to="/">Home</Link>
+            <Link className="link" to="/">Home</Link>
           </nav>
         </li>
         <li>
           <nav>
-            <Link to="/about">About</Link>
+            <Link className="link" to="/about">About</Link>
           </nav>
         </li>
         <li>
           <nav>
-            <Link to="/shoes">Shoes</Link>
+            <Link className="link" to="/shoes">Shoes</Link>
           </nav>
         </li>
       </ul>

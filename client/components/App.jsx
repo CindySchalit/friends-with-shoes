@@ -1,7 +1,7 @@
 import React from 'react'
 
 import NavBar from './NavBar.jsx'
-import Routes from './Routes.jsx'
+import Routes from '../../client/routes.jsx'
 
 const App = () => {
   return (

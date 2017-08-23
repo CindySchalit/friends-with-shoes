@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 export default class Shoes extends Component {
-  super(props) {
-
+  constructor(props) {
+    super(props)
   }
 
   render() {

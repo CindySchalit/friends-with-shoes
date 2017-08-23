@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Home from './Home.jsx'
-import About from './About.jsx'
-import Shoes from './Shoes.jsx'
+import Home from './components/Home.jsx'
+import About from './components/About.jsx'
+import Shoes from './components/Shoes.jsx'
 
 export default class Routes extends Component {
-  super(props) {
-
+  constructor(props) {
+    super(props)
   }
 
   render() {

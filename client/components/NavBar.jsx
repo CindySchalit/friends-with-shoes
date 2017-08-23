@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import styles from './styles/navBar.css'
 
 export default class NavBar extends Component {
-  super(props) {
-
+  constructor(props) {
+    super(props)
   }
 
   render() {

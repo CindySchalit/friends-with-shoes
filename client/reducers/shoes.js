@@ -1,7 +1,7 @@
 import { GET_SHOES } from '../actions'
 
 const initialShoesState = {
-  allShoes: ['shoe1', 'shoe2', 'shoe3'],
+  shoes: ['shoe1', 'shoe2', 'shoe3'],
 }
 
 const shoesReducer = (state=initialShoesState, action) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Link, Route } from 'react-router-dom'
+import { HashRouter, Route, Link } from 'react-router-dom'
 import styles from './styles/navBar.css'
 
 const NavBar = () => {

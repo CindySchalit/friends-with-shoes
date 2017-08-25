@@ -18,3 +18,5 @@ const shoesReducer = (state=initialShoesState, action) => {
 
   return newState
 }
+
+export default shoesReducer

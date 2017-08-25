@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
 
 import { getShoes } from '../actions'
 import Shoes from '../components/Shoes.jsx'
@@ -11,4 +10,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default withRouter(connect(mapStateToProps)(Shoes))
+export default connect(mapStateToProps)(Shoes)

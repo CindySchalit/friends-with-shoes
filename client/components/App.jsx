@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
@@ -10,13 +10,11 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <div>
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/about" component={ About } />
-          <Route exact path="/shoes" component={ Shoes } />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route path="/about" component={ About } />
+        <Route path="/shoes" component={ Shoes } />
+      </Switch>
     </div>
   )
 }

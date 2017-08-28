@@ -1,7 +1,32 @@
 import { GET_SHOES } from '../actions'
 
 const initialShoesState = {
-  shoes: ['shoe1', 'shoe2', 'shoe3'],
+  shoes: [
+    {
+      shoeBrand: 'Plos Feet',
+      shoeName: 'Assymetric Saurus Raurus',
+      gender: `Men's`,
+      size: 12,
+      color: 'Black',
+      image: 'https://pixabay.com/en/chucks-converse-shoes-footwear-153310/',
+    }
+    // {
+    //   shoeBrand: 'Pili Pilis Flippie Floppies',
+    //   shoeName: ,
+    //   gender: ,
+    //   size: ,
+    //   color: ,
+    //   image: ,
+    // },
+    // {
+    //   shoeBrand: 'Feels Like Wadze',
+    //   shoeName: ,
+    //   gender: ,
+    //   size: ,
+    //   color: ,
+    //   image: ,
+    // }
+  ],
 }
 
 const shoesReducer = (state=initialShoesState, action) => {

@@ -1,12 +1,22 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 
 const Shoes = (props) => {
-  console.log(props)
+  const shoes = props && props.shoes
+
+  console.log('shoes:\n', shoes)
+
   return(
     <div>
       <h1>Shoes Page</h1>
-      <Button>Click here</Button>
+      <ul>
+      {
+        shoes.map(shoe =>
+          <li key={shoe.id}>
+            {shoe.shoeBrand}
+          </li>
+        )
+      }
+      </ul>
     </div>
   )
 }

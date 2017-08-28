@@ -1,6 +1,6 @@
 .ul-NavBar {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 50px;
     padding: 0;
     overflow: hidden;
     background-color: #00bcd4;
@@ -19,7 +19,6 @@
 
 .nav-NavBar {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,6 +28,7 @@
     background-color: #ffeb3b;
 }
 
-.link {
+.link-NavBar {
     text-decoration: none;
+    color: #673ab7;
 }

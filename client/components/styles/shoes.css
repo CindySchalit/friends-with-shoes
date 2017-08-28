@@ -1,0 +1,11 @@
+.Col-Shoes {
+  font-weight: bold;
+  color: #ff5722;
+  font-size: normal;
+}
+
+.Image-Shoes {
+  margin: 30px;
+  max-width: 67%;
+  max-height: 67%;
+}

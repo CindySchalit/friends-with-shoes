@@ -1,3 +1,9 @@
 .app {
   font-family: monospace;
 }
+
+h1 {
+  color: #673ab7;
+  text-align: center;
+  margin-bottom: 30px;
+}

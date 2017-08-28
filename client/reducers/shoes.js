@@ -9,7 +9,7 @@ const initialShoesState = {
       gender: `Men's`,
       size: 12,
       color: 'Black',
-      image: 'https://pixabay.com/en/chucks-converse-shoes-footwear-153310/',
+      image: '../../public/chucks.png',
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const initialShoesState = {
       gender: `Women's`,
       size: 7.5,
       color: 'White',
-      image: 'https://pixabay.com/en/running-shoe-shoe-asics-321199/',
+      image: '../../public/white-running-shoe.jpg',
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const initialShoesState = {
       gender: `Women's`,
       size: 9,
       color: 'Brown',
-      image: 'https://pixabay.com/en/shoes-desert-only-stranger-1743929/',
+      image: '../../public/brown-boots.jpg',
     }
   ],
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Col } from 'react-bootstrap'
 
 const Shoes = (props) => {
   const shoes = props && props.shoes
@@ -11,9 +12,9 @@ const Shoes = (props) => {
       <ul>
       {
         shoes.map(shoe =>
-          <li key={shoe.id}>
+          <Col key={shoe.id}>
             {shoe.shoeBrand}
-          </li>
+          </Col>
         )
       }
       </ul>

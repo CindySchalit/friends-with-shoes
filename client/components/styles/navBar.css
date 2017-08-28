@@ -1,4 +1,4 @@
-ul {
+.ul-NavBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,16 +8,16 @@ ul {
     font-size: x-large;
 }
 
-li {
+.li-NavBar {
     float: left;
     border-right: 1px solid #bbb;
 }
 
-li:last-child {
+.li-NavBar:last-child {
     border-right: none;
 }
 
-nav {
+.nav-NavBar {
     display: block;
     color: white;
     text-align: center;
@@ -25,7 +25,7 @@ nav {
     text-decoration: none;
 }
 
-nav:hover {
+.nav-NavBar:hover {
     background-color: #ffeb3b;
 }
 

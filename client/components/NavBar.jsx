@@ -4,20 +4,20 @@ import styles from './styles/navBar.css'
 
 const NavBar = () => {
   return(
-    <ul>
-      <li>
-        <nav>
-          <Link className="link" to="/">Home</Link>
+    <ul className="ul-NavBar">
+      <li className="li-NavBar">
+        <nav className="nav-NavBar">
+          <Link className="link-NavBar" to="/">Home</Link>
         </nav>
       </li>
-      <li>
-        <nav>
-          <Link className="link" to="/about">About</Link>
+      <li className="li-NavBar">
+        <nav className="nav-NavBar">
+          <Link className="link-NavBar" to="/about">About</Link>
         </nav>
       </li>
-      <li>
-        <nav>
-          <Link className="link" to="/shoes">Shoes</Link>
+      <li className="li-NavBar">
+        <nav className="nav-NavBar">
+          <Link className="link-NavBar" to="/shoes">Shoes</Link>
         </nav>
       </li>
     </ul>

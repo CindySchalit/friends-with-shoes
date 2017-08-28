@@ -7,9 +7,11 @@ import Home from './Home.jsx'
 import About from './About.jsx'
 import Shoes from '../containers/Shoes.jsx'
 
+import styles from './styles/app.css'
+
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <Switch>
         <Route exact path="/" component={ Home } />

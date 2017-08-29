@@ -19,9 +19,10 @@ footer {
   float: bottom;
   margin-top: 50px;
   min-height: 100px;
-  font-size: larger;
+  font-size: x-large;
   color: #ffeb3b;
   text-align: center;
   vertical-align: center;
   flex: 0 0 auto;
+  font-weight: bold;
 }

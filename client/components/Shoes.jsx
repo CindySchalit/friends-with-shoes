@@ -7,13 +7,13 @@ const Shoes = (props) => {
   const shoes = props && props.shoes
 
   return(
-    <div className="Grid-Container-Shoes">
+    <div>
       <h1>Shoes Who Need Friends</h1>
       <br />
       <Grid fluid={true} className="Grid-Shoes">
         {
-          shoes.map((row, index) =>
-            <Row className="show-grid" key={index}>{
+          shoes.map(row =>
+            <Row className="show-grid" key={row.reduce((a, b) => a+b)}>{
               row.map(shoe =>
                 <Col className="Col-Shoes" key={shoe.id} xs={6} md={4} lg={4}>
                   <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>

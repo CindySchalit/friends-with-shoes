@@ -18,6 +18,10 @@ const App = () => {
         <Route path="/about" component={ About } />
         <Route path="/shoes" render={ () => <Shoes /> } />
       </Switch>
+      <footer>
+        <br />
+        <p>Friends with Shoes</p>
+      </footer>
     </div>
   )
 }

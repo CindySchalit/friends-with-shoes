@@ -1,11 +1,31 @@
+.Grid-Shoes {
+  margin: auto;
+  align-self: center
+}
+
 .Col-Shoes {
   font-weight: bold;
-  color: #ff5722;
+  color: #673ab7;
   font-size: normal;
+  margin: auto;
+  width: 30%;
 }
 
 .Image-Shoes {
-  margin: 30px;
-  max-width: 67%;
-  max-height: 67%;
+  position: relative;
+  height: 300px;
+  max-width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+.header-Shoes {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.italics-Shoes {
+  font-style: italic;
 }

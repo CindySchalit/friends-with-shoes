@@ -17,8 +17,8 @@ const initialShoesState = {
       shoeName: 'The Plos Morning Shuffler',
       gender: `Women's`,
       size: 7.5,
-      color: 'White',
-      image: '../../public/white-running-shoe.jpg',
+      color: 'Grey',
+      image: '../../public/adidas.jpg',
     },
     {
       id: 3,
@@ -28,6 +28,24 @@ const initialShoesState = {
       size: 9,
       color: 'Brown',
       image: '../../public/brown-boots.jpg',
+    },
+    {
+      id: 4,
+      shoeBrand: 'Moomoo and Bobashi',
+      shoeName: 'Little Shoes for Big Paws',
+      gender: `Boy Gatitos`,
+      size: 5,
+      color: 'Fuzzy',
+      image: '../../public/moomooBashi.jpg',
+    },
+    {
+      id: 5,
+      shoeBrand: 'Pili Pili Angeles',
+      shoeName: `Never Walk Barefoot in L.A.`,
+      gender: `Men's`,
+      size: 8,
+      color: 'Gray',
+      image: '../../public/beachShoe.jpg',
     }
   ],
 }

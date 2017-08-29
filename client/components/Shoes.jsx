@@ -5,36 +5,33 @@ import styles from './styles/shoes.css'
 
 const Shoes = (props) => {
   const shoes = props && props.shoes
-  console.log('shoes:\n', shoes)
+  console.log('shoes:', shoes)
 
   return(
     <div>
       <h1>Shoes Who Need Friends</h1>
       <br />
-      <Grid>
-        <Row className="show-grid">
+      <Grid fluid={true} className="Grid-Shoes">
         {
-          shoes.map(shoe =>
-            <Col className="Col-Shoes" key={shoe.id} xs={6} md={4}>
-              <Image className="Image-Shoes" src={shoe.image} rounded xs={6} md={4} responsive />
-              <br />
-              Brand: {shoe.shoeBrand}
-              <br />
-              Style: {shoe.shoeName}
-              <br />
-              Gender: {shoe.gender}
-              <br />
-              Size: {shoe.size}
-              <br />
-              Color: {shoe.color}
-            </Col>)
+          shoes.map((row, index) =>
+            <Row className="show-grid" key={index}>{
+              row.map(shoe =>
+                <Col className="Col-Shoes" key={shoe.id} xs={6} md={4}>
+                  <Image className="Image-Shoes" src={shoe.image} rounded/>
+                  <h3 className="header-Shoes">{shoe.shoeBrand}</h3>
+                  <h4 className="header-Shoes italics-Shoes">{shoe.shoeName}</h4>
+                  Gender: {shoe.gender}
+                  <br />
+                  Size: {shoe.size}
+                  <br />
+                  Color: {shoe.color}
+                </Col>
+              )
+            }
+            </Row>
+          )
         }
-        </Row>
       </Grid>
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   )
 }

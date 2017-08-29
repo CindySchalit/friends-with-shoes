@@ -1,5 +1,9 @@
+.Grid-Container-Shoes {
+
+}
+
 .Grid-Shoes {
-  width: 85%;
+  width: 67%;
   margin: 0 auto;
 }
 
@@ -8,13 +12,13 @@
   color: #673ab7;
   font-size: normal;
   margin: auto;
-  width: 30%;
+  width: 33%;
 }
 
 .Image-Shoes {
   position: relative;
-  height: 300px;
-  max-width: 100%;
+  max-height: 150px;
+  height: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

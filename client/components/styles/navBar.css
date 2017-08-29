@@ -1,6 +1,6 @@
-ul {
+.ul-NavBar {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 50px;
     padding: 0;
     overflow: hidden;
     background-color: #00bcd4;
@@ -8,27 +8,28 @@ ul {
     font-size: x-large;
 }
 
-li {
+.li-NavBar {
     float: left;
     border-right: 1px solid #bbb;
 }
 
-li:last-child {
+.li-NavBar:last-child {
     border-right: none;
 }
 
-nav {
+.nav-NavBar {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav:hover {
+.nav-NavBar:hover {
     background-color: #ffeb3b;
 }
 
-.link {
+.link-NavBar {
     text-decoration: none;
+    color: #673ab7;
+    font-weight: bold;
 }

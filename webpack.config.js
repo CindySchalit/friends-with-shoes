@@ -11,7 +11,7 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: './public/bundle.js'
   },
   module: {
     loaders: [
@@ -28,14 +28,26 @@ module.exports = {
         loaders: ['style-loader', 'css-loader']
       },
       {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
   plugins: [HtmlWebpackPluginConfig],
   devServer: {
     compress: true,
-    disableHostCheck: true
+    disableHostCheck: true,
   },
 }

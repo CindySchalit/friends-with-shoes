@@ -3,7 +3,7 @@ node_modules/*
 
 # Compiled JS
 /dist/
-index_bundle.js
+bundle.js
 
 # Temp caches
 .eslintcache

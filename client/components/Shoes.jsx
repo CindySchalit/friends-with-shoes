@@ -5,7 +5,6 @@ import styles from './styles/shoes.css'
 
 const Shoes = (props) => {
   const shoes = props && props.shoes
-  console.log('shoes:', shoes)
 
   return(
     <div>

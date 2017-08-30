@@ -14,10 +14,12 @@ const Shoes = (props) => {
         <Grid fluid={true} className="Grid-Shoes">
           {
             shoes.map(row =>
-              <Row className="show-grid" key={row.reduce((a, b) => a+b)}>{
+              <Row key={row.reduce((a, b) => a+b)}>{
                 row.map(shoe =>
                   <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
-                    <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
+                    <div className="Image-Container">
+                      <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
+                    </div>
                     <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
                     <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
                     Gender: {shoe.gender}

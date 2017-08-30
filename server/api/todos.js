@@ -1,4 +1,5 @@
 const router = require('express').Router()
+
 const models = require( '../../server/db/models/index')
 const Todo = models.Todo
 

@@ -1,18 +1,37 @@
-'use strict';
-module.exports = function(sequelize, DataTypes) {
-  var Shoe = sequelize.define('Shoe', {
-    shoeBrand: DataTypes.STRING,
-    shoeName: DataTypes.STRING,
-    gender: DataTypes.STRING,
-    size: DataTypes.NUMBER,
-    color: DataTypes.STRING,
-    image: DataTypes.STRING
+'use strict'
+
+module.exports = (sequelize, DataTypes) => {
+  const Shoe = sequelize.define('Shoe', {
+    shoeBrand: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    shoeName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    size: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+    },
+    color: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   }, {
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
       }
     }
-  });
-  return Shoe;
-};
+  })
+
+  return Shoe
+}

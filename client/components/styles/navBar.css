@@ -1,35 +1,36 @@
 .ul-NavBar {
-    list-style-type: none;
-    margin-bottom: 50px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #00bcd4;
-    font-family: monospace;
-    font-size: x-large;
+  list-style-type: none;
+  margin-bottom: 50px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00bcd4;
+  font-family: monospace;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .li-NavBar {
-    float: left;
-    border-right: 1px solid #bbb;
+  float: left;
 }
 
 .li-NavBar:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 .nav-NavBar {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  padding: 20px 20px 20px 30px;
+  text-decoration: none;
 }
 
 .nav-NavBar:hover {
-    background-color: #ffeb3b;
+  background-color: #ffeb3b;
 }
 
 .link-NavBar {
-    text-decoration: none;
-    color: #673ab7;
-    font-weight: bold;
+  text-decoration: none;
+  color: #673ab7;
+  font-weight: bold;
 }

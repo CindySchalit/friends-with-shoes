@@ -34,3 +34,23 @@
   color: #673ab7;
   font-weight: bold;
 }
+
+a:link {
+  text-decoration: none;
+  color: #673ab7;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #673ab7;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #673ab7;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #673ab7;
+}

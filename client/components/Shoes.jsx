@@ -16,7 +16,7 @@ const Shoes = (props) => {
             shoes.map(row =>
               <Row className="show-grid" key={row.reduce((a, b) => a+b)}>{
                 row.map(shoe =>
-                  <Col className="Col-Shoes" key={shoe.id} xs={6} md={4} lg={4}>
+                  <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
                     <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
                     <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
                     <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>

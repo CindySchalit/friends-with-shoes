@@ -13,15 +13,25 @@ const App = () => {
   return (
     <div className="app">
       <NavBar />
+
       <Switch>
-        <Route exact path="/" component={ Home } />
+        <Route exact path="/" component={ About } />
         <Route path="/about" component={ About } />
         <Route path="/shoes" render={ () => <Shoes /> } />
       </Switch>
+
       <footer>
         <br />
-        <p>Friends with Shoes</p>
+        &copy; 2017
+        <br />
+        <p>Friends with Shoes
+        <br />
+        Made for Peeeeelllooooosss by Wifeysita
+        <br />
+        <br />
+        </p>
       </footer>
+
     </div>
   )
 }

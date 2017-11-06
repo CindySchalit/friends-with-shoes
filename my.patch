@@ -1,0 +1,146 @@
+diff --git a/client/components/Shoes.jsx b/client/components/Shoes.jsx
+index e3ec22b..71bc1f0 100644
+--- a/client/components/Shoes.jsx
++++ b/client/components/Shoes.jsx
+@@ -1,45 +1,42 @@
+-import React, { Component } from 'react'
++import React from 'react'
+ import { Grid, Row, Col, Image } from 'react-bootstrap'
+ 
+ import styles from './styles/shoes.css'
+ 
+-class Shoes extends Component {
+-  render() {
+-    console.log('this.props:', this.props)
+-    const shoes = this.props && this.props.shoes
++const Shoes = (props) => {
++  const shoes = props && props.shoes
+ 
+-    return(
+-      <div>
+-        <h1>Shoes Who Need Friends</h1>
+-        <br />
+-        <div className="Grid-Container-Shoes">
+-          <Grid fluid={true} className="Grid-Shoes">
+-            {
+-              shoes.map(row =>
+-                <Row key={row.reduce((a, b) => a+b)}>{
+-                  row.map(shoe =>
+-                    <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
+-                      <div className="Image-Container">
+-                        <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
+-                      </div>
+-                      <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
+-                      <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
+-                      Gender: {shoe.gender}
+-                      <br />
+-                      Size: {shoe.size}
+-                      <br />
+-                      Color: {shoe.color}
+-                    </Col>
+-                  )
+-                }
+-                </Row>
+-              )
+-            }
+-          </Grid>
+-        </div>
++  return(
++    <div>
++      <h1>Shoes Who Need Friends</h1>
++      <br />
++      <div className="Grid-Container-Shoes">
++        <Grid fluid={true} className="Grid-Shoes">
++          {
++            shoes.map(row =>
++              <Row key={row.reduce((a, b) => a+b)}>{
++                row.map(shoe =>
++                  <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
++                    <div className="Image-Container">
++                      <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
++                    </div>
++                    <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
++                    <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
++                    Gender: {shoe.gender}
++                    <br />
++                    Size: {shoe.size}
++                    <br />
++                    Color: {shoe.color}
++                  </Col>
++                )
++              }
++              </Row>
++            )
++          }
++        </Grid>
+       </div>
+-    )
+-  }
++    </div>
++  )
+ }
+ 
+ export default Shoes
+diff --git a/client/reducers/shoes.js b/client/reducers/shoes.js
+index 563780d..4549d69 100644
+--- a/client/reducers/shoes.js
++++ b/client/reducers/shoes.js
+@@ -1,57 +1,7 @@
+ import { GET_SHOES } from '../actions'
+ 
+-// const initialShoesState = {
+-//   shoes: [],
+-// }
+-
+ const initialShoesState = {
+-  shoes: [
+-    {
+-      id: 1,
+-      shoeBrand: 'Plos Feet',
+-      shoeName: 'Assymetric Saurus Raurus',
+-      gender: `Men's`,
+-      size: 12,
+-      color: 'Black',
+-      image: '../../public/chucks.png',
+-    },
+-    {
+-      id: 2,
+-      shoeBrand: 'Pili Pilis Flippie Floppies',
+-      shoeName: 'The Plos Morning Shuffler',
+-      gender: `Women's`,
+-      size: 7.5,
+-      color: 'Grey',
+-      image: '../../public/adidas.jpg',
+-    },
+-    {
+-      id: 3,
+-      shoeBrand: 'Feels Like Wadze',
+-      shoeName: 'Verrrrrr Nice',
+-      gender: `Women's`,
+-      size: 9,
+-      color: 'Brown',
+-      image: '../../public/brown-boots.jpg',
+-    },
+-    {
+-      id: 4,
+-      shoeBrand: 'Moomoo and Bobashi',
+-      shoeName: 'Little Shoes for Big Paws',
+-      gender: `Boy Gatitos`,
+-      size: 5,
+-      color: 'Fuzzy',
+-      image: '../../public/moomooBashi.jpg',
+-    },
+-    {
+-      id: 5,
+-      shoeBrand: 'Pili Pili Angeles',
+-      shoeName: `Never Walk Barefoot in L.A.`,
+-      gender: `Men's`,
+-      size: 8,
+-      color: 'Gray',
+-      image: '../../public/beachShoe.jpg',
+-    }
+-  ]
++  shoes: [],
+ }
+ 
+ const shoesReducer = (state=initialShoesState, action) => {

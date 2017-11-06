@@ -11,12 +11,11 @@ class Shoes extends Component {
     return(
       <div>
         <h1>Shoes Who Need Friends</h1>
-        <br />
         <div className="Grid-Container-Shoes">
           <Grid fluid={true} className="Grid-Shoes">
             {
-              shoes.map(row =>
-                <Row key={row.reduce((a, b) => a+b)}>{
+              shoes.map((row, index) =>
+                <Row key={index}>{
                   row.map(shoe =>
                     <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
                       <div className="Image-Container">

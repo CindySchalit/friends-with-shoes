@@ -5,7 +5,6 @@ import styles from './styles/shoes.css'
 
 class Shoes extends Component {
   render() {
-    console.log('this.props:', this.props)
     const shoes = this.props && this.props.shoes
 
     return(
@@ -18,11 +17,15 @@ class Shoes extends Component {
                 <Row key={index}>{
                   row.map(shoe =>
                     <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
+
                       <div className="Image-Container">
                         <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
                       </div>
+
                       <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
+
                       <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
+
                       Gender: {shoe.gender}
                       <br />
                       Size: {shoe.size}

@@ -6,6 +6,7 @@ import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
 import Shoes from '../containers/Shoes.jsx'
+import Footer from './Footer.jsx'
 
 import styles from './styles/app.css'
 
@@ -20,18 +21,7 @@ const App = () => {
         <Route path="/shoes" render={ () => <Shoes /> } />
       </Switch>
 
-      <footer>
-        <br />
-        &copy; 2017
-        <br />
-        <p>Friends with Shoes
-        <br />
-        Made for Peeeeelllooooosss by Wifeysita
-        <br />
-        <br />
-        </p>
-      </footer>
-
+      <Footer />
     </div>
   )
 }

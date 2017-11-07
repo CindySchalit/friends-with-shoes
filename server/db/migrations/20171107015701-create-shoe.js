@@ -23,6 +23,9 @@ module.exports = {
       color: {
         type: Sequelize.STRING
       },
+      foot: {
+        type: Sequelize.ENUM('left', 'right')
+      },
       image: {
         type: Sequelize.STRING
       },

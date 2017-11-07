@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    foot: {
+      type: DataTypes.ENUM('left', 'right'),
+      allowNull: false,
+    },
     image: {
       type: DataTypes.STRING,
       allowNull: false,

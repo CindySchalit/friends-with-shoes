@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 100%;
   flex: 1 0 auto;
+  background-color: #8080802b;
 }
 
 h1 {
@@ -19,7 +20,7 @@ footer {
   float: bottom;
   margin-top: 50px;
   min-height: 100px;
-  font-size: x-large;
+  font-size: large;
   color: #ffeb3b;
   text-align: center;
   vertical-align: center;

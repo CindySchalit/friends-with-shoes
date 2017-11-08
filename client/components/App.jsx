@@ -6,6 +6,7 @@ import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
 import Shoes from '../containers/Shoes.jsx'
+import Footer from './Footer.jsx'
 
 import styles from './styles/app.css'
 
@@ -13,15 +14,14 @@ const App = () => {
   return (
     <div className="app">
       <NavBar />
+
       <Switch>
-        <Route exact path="/" component={ Home } />
-        <Route path="/about" component={ About } />
-        <Route path="/shoes" render={ () => <Shoes /> } />
+        <Route exact path="/" component={ About } />
+        <Route exact path="/about" component={ About } />
+        <Route exact path="/shoes" render={ () => <Shoes /> } />
       </Switch>
-      <footer>
-        <br />
-        <p>Friends with Shoes</p>
-      </footer>
+
+      <Footer />
     </div>
   )
 }

@@ -2,14 +2,14 @@
   "development": {
     "username": "Cindy",
     "password": null,
-    "database": "todos-dev",
+    "database": "shoes",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "Cindy",
     "password": null,
-    "database": "todos-test",
+    "database": "shoes",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

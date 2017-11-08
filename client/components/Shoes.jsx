@@ -1,40 +1,63 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Grid, Row, Col, Image } from 'react-bootstrap'
+import { withRouter } from 'react-router-dom'
 
+import { getShoesThunk } from '../actions'
 import styles from './styles/shoes.css'
 
-const Shoes = (props) => {
-  const shoes = props && props.shoes
+class Shoes extends Component {
+  constructor(props) {
+    super(props)
+  }
 
-  return(
-    <div>
-      <h1>Shoes Who Need Friends</h1>
-      <br />
-      <div className="Grid-Container-Shoes">
-        <Grid fluid={true} className="Grid-Shoes">
-          {
-            shoes.map(row =>
-              <Row className="show-grid" key={row.reduce((a, b) => a+b)}>{
-                row.map(shoe =>
-                  <Col className="Col-Shoes" key={shoe.id} xs={6} md={4} lg={4}>
-                    <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
-                    <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
-                    <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
-                    Gender: {shoe.gender}
-                    <br />
-                    Size: {shoe.size}
-                    <br />
-                    Color: {shoe.color}
-                  </Col>
-                )
-              }
-              </Row>
-            )
-          }
-        </Grid>
+  componentWillMount() {
+    this.props.dispatch(getShoesThunk())
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.location !== this.props.location) {
+      console.log('nextProps:', nextProps)
+    }
+  }
+
+  render() {
+    const shoes = this.props && this.props.shoes
+
+    return(
+      <div>
+        <h1>Shoes Who Need Friends</h1>
+        <div className="Grid-Container-Shoes">
+          <Grid fluid={true} className="Grid-Shoes">
+            {
+              shoes.map((row, index) =>
+                <Row key={index}>{
+                  row.map(shoe =>
+                    <Col className="Col-Shoes" key={shoe.id} md={3} mdOffset={3}>
+
+                      <div className="Image-Container">
+                        <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
+                      </div>
+
+                      <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
+
+                      <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
+
+                      Gender: {shoe.gender}
+                      <br />
+                      Size: {shoe.size}
+                      <br />
+                      Color: {shoe.color}
+                    </Col>
+                  )
+                }
+                </Row>
+              )
+            }
+          </Grid>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
-export default Shoes
+export default withRouter(Shoes)

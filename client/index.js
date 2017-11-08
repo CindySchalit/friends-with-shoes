@@ -1,16 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter } from 'react-router-dom'
+import { Router } from 'react-router-dom'
+import { ConnectedRouter } from 'react-router-redux'
 import { Provider } from 'react-redux'
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
-import store from './store'
+import store, { history } from './store'
 import App from './components/App.jsx'
 
 ReactDOM.render((
   <Provider store={store}>
-    <HashRouter>
+    <ConnectedRouter history={history}>
       <App />
-    </HashRouter>
+    </ConnectedRouter>
   </Provider>
 ), document.getElementById('root'))

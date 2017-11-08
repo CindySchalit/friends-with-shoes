@@ -13,11 +13,12 @@ const getShoes = shoes => {
   }
 }
 
-const boundGetShoes = shoes => dispatch(getShoes(shoes))
-
 /* async action creators */
 export const getShoesThunk = () =>
   dispatch =>
     axios.get(`${API_URL}/shoes`)
-      .then(res => boundGetShoes(res.data))
+      .then(res => {
+        console.log('got shoes from db')
+        dispatch(getShoes(res.data))
+      })
       .catch(error => console.log(error))

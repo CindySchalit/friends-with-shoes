@@ -1,9 +1,25 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col, Image } from 'react-bootstrap'
+import { withRouter } from 'react-router-dom'
 
+import { getShoesThunk } from '../actions'
 import styles from './styles/shoes.css'
 
 class Shoes extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentWillMount() {
+    this.props.dispatch(getShoesThunk())
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.location !== this.props.location) {
+      console.log('nextProps:', nextProps)
+    }
+  }
+
   render() {
     const shoes = this.props && this.props.shoes
 
@@ -44,4 +60,4 @@ class Shoes extends Component {
   }
 }
 
-export default Shoes
+export default withRouter(Shoes)

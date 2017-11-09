@@ -40,15 +40,21 @@ class Shoes extends Component {
 
                       <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
 
-                      <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
+                      <h4 className="header-Shoes italics-Shoes">{shoe.shoeName}</h4>
 
-                      Gender: {shoe.gender}
-                      <br />
-                      Size: {shoe.size}
-                      <br />
-                      Color: {shoe.color}
-                      <br />
-                      Foot: {shoe.foot}
+                      <div className="shoesWrapper">
+                        <div className="shoesLeft">
+                          Gender: {shoe.gender}
+                          <br />
+                          Size: {shoe.size}
+                        </div>
+                        <div className="shoesRight">
+                          Color: {shoe.color}
+                          <br />
+                          Foot: {shoe.foot}
+                        </div>
+                      </div>
+
                     </Col>
                   )
                 }

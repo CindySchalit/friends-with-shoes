@@ -53,3 +53,10 @@ a:active {
   text-decoration: underline;
   color: #673ab7;
 }
+
+.Image-NavBar {
+  background-image: url("../../../public/shoeRack.png");
+  background-repeat: repeat;
+  background-position: right top;
+  height: 200px;
+}

@@ -38,9 +38,9 @@ class Shoes extends Component {
                         <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
                       </div>
 
-                      <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
+                      <h4 className="brand-Shoes">{shoe.shoeBrand}</h4>
 
-                      <h4 className="header-Shoes italics-Shoes">{shoe.shoeName}</h4>
+                      <h4 className="name-Shoes">{shoe.shoeName}</h4>
 
                       <div className="shoesWrapper">
                         <div className="shoesLeft">

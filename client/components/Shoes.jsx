@@ -47,6 +47,8 @@ class Shoes extends Component {
                       Size: {shoe.size}
                       <br />
                       Color: {shoe.color}
+                      <br />
+                      Foot: {shoe.foot}
                     </Col>
                   )
                 }

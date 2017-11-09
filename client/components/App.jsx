@@ -19,6 +19,7 @@ const App = () => {
         <Route exact path="/" component={ About } />
         <Route exact path="/about" component={ About } />
         <Route exact path="/shoes" render={ () => <Shoes /> } />
+        <Route exact path="/matches" render={ () => <Shoes /> } />
       </Switch>
 
       <Footer />

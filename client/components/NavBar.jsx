@@ -2,7 +2,7 @@ import React from 'react'
 import { HashRouter, Route, Link } from 'react-router-dom'
 
 import styles from './styles/navBar.css'
-import shoeRack from '../../public/shoeRack.png'
+import shoeRackTrans from '../../public/shoeRackTrans.png'
 
 const NavBar = () => {
   return(

@@ -5,10 +5,17 @@ import styles from './styles/about.css'
 const About = () => {
   return (
     <div className="aboutBody">
-      <p className="aboutParagraph">Friends with Shoes is a marketplace for people who have feet of different sizes. For such persons, shoe shopping can be a hassle because they typically have to buy two pairs of the same shoe.</p>
-      <p className="aboutParagraph">For instance, someone with a left foot of size 10 and a right foot of size 12 must buy two pairs of shoes - one of size 10 and another of size 12 - leaving him or her with an extra right shoe (size 12) and left shoe (size 10).</p>
-      <p className="aboutParagraphLast">Here at Friends with Shoes, the reciprocally lopsided can exchange these extra shoes.</p>
+
+      <p className="aboutParagraphFirst">Friends with Shoes is a marketplace for people who have feet of different sizes. We know shoe shopping is a hassle for you because you always have to buy two pairs of the same shoe.</p>
+
+      <p className="aboutParagraph">For example, you have a size-10 left foot and a size-12 right foot, and you need some new running shoes.  You would have to buy two pairs:  one in size 10 and another in size 12.</p>
+
+      <p className="aboutParagraph">But this leaves you with two extra shoes -- the size-10 right and the size-12 left -- and gets expensive after a while.  Plus, your precious closet space is being occupied by these unused shoes!</p>
+
+      <p className="aboutParagraphLast">At Friends with Shoes, find someone who is reciprocally lopsided -- the size-12 left to your size-12 right -- and find a home for your orphan shoes.</p>
+
       <img className="aboutImage" src="../../public/chucks-ring.png" alt="ring of sneakers"/>
+
     </div>
   )
 }

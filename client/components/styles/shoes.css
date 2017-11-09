@@ -1,3 +1,19 @@
+.h2-Shoes {
+  color: #673ab7;
+  text-align: center;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.paragraph-Shoes {
+  color: #673ab7;
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
 .Grid-Container-Shoes {
   display: flex;
   justify-content: center;
@@ -39,7 +55,7 @@
 
 .brand-Shoes {
   padding-top: 10px;
-  font-weight: bolder;
+  font-weight: bold;
   color: #ff5722;
   text-align: center;
 }
@@ -48,7 +64,7 @@
   font-weight: bold;
   color: #ff5722;
   text-align: center;
-  font-style: italic;
+  font-family: cursive;
 }
 
 .shoesWrapper {

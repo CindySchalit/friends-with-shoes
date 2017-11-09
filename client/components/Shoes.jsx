@@ -25,7 +25,9 @@ class Shoes extends Component {
 
     return(
       <div>
-        <h2>Lonely Shoes</h2>
+        <h2 className="h2-Shoes">Solitary Soles</h2>
+        <p className="paragraph-Shoes">These shoes are looking for their sole-mates.</p>
+
         <div className="Grid-Container-Shoes">
           <Grid fluid={true} className="Grid-Shoes">
             {

@@ -32,7 +32,7 @@ const NavBar = () => {
       </ul>
 
       <div className="Image-NavBar">
-        <h1>Friends with Shoes</h1>
+        <h1 className="Header-NavBar">Friends with Shoes</h1>
       </div>
 
     </div>

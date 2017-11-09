@@ -7,12 +7,14 @@ const Footer = () => {
         <br />
         &copy; 2017
         <br />
-        <p>Friends with Shoes
+
+        <p className="paragraph-Footer">Friends with Shoes
         <br />
         Made for Peeeeelllooooosss by Wifeysita
         <br />
         <br />
         </p>
+
       </footer>
     </div>
   )

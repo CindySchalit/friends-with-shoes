@@ -1,0 +1,33 @@
+@media all and (min-width: 480px) {
+  .h2-findShoe {
+    color: #673ab7;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+
+  .findShoe {
+    padding: 0 0;
+  }
+
+  .findShoe form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .findButton {
+    font-weight: bold;
+    color: #ffeb3b;
+    background-color: #00bcd4;
+  }
+
+  .control-label-findShoe {
+    color: #673ab7;
+    font-size: 1.25em;
+  }
+
+  .form-control-findShoe {
+    border: 1px solid #FF5722;
+    background-color: #00bcd42b;
+  }
+}

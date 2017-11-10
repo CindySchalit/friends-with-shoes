@@ -5,7 +5,9 @@ import { render } from 'react-dom'
 import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
+import FindShoe from './FindShoe.jsx'
 import Shoes from '../containers/Shoes.jsx'
+
 import Footer from './Footer.jsx'
 
 import styles from './styles/app.css'
@@ -19,7 +21,7 @@ const App = () => {
         <Route exact path="/" component={ About } />
         <Route exact path="/about" component={ About } />
         <Route exact path="/shoes" render={ () => <Shoes /> } />
-        <Route exact path="/matches" render={ () => <Shoes /> } />
+        <Route exact path="/find" render={ () => <FindShoe /> } />
       </Switch>
 
       <Footer />

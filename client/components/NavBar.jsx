@@ -26,7 +26,7 @@ const NavBar = () => {
         </li>
         <li className="li-NavBar">
           <nav className="nav-NavBar">
-            <Link className="link-NavBar" to="/matches">Find a Shoe</Link>
+            <Link className="link-NavBar" to="/find">Find a Shoe</Link>
           </nav>
         </li>
       </ul>

@@ -30,6 +30,7 @@ class FindShoe extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
+    console.log('form submitted')
   }
 
   validateForm() {

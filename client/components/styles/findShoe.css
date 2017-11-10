@@ -24,6 +24,20 @@
     margin-bottom: 100px;
   }
 
+  .findButton:hover {
+    font-weight: bold;
+    color: #00bcd4;
+    background-color: #ffeb3b;
+    margin-bottom: 100px;
+  }
+
+  .findButton:focus {
+    font-weight: bold;
+    color: #00bcd4;
+    background-color: #ffeb3b;
+    margin-bottom: 100px;
+  }
+
   .control-label-findShoe {
     color: #673ab7;
     font-size: 1.25em;

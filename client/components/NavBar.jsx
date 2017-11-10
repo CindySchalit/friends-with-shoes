@@ -7,7 +7,6 @@ import shoeRackTrans from '../../public/shoeRackTrans.png'
 const NavBar = () => {
   return(
     <div>
-
       <ul className="ul-NavBar">
         <li className="li-NavBar">
           <nav className="nav-NavBar">

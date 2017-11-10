@@ -8,7 +8,7 @@
 }
 
 .aboutParagraphFirst {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .aboutParagraphLast {
@@ -20,4 +20,5 @@
   margin: auto;
   width: 80%;
   background-color: white;
+  margin-bottom: 100px;
 }

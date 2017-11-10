@@ -3,11 +3,13 @@
     color: #673ab7;
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .findShoe {
     padding: 0 0;
+    background-color: #9e9e9e1c;
   }
 
   .findShoe form {
@@ -19,6 +21,7 @@
     font-weight: bold;
     color: #ffeb3b;
     background-color: #00bcd4;
+    margin-bottom: 100px;
   }
 
   .control-label-findShoe {

@@ -34,12 +34,10 @@ class FindShoe extends Component {
   }
 
   validateForm() {
-    return this.state.gender === `Men's` || `Women's`
+    return true
   }
 
   render() {
-    console.log('this.state:', this.state)
-
     return (
       <div className="findShoe">
         <h2 className="h2-findShoe">Give me some info and I'll give you a shoe.</h2>
@@ -110,8 +108,6 @@ class FindShoe extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-
-          <br />
 
           <Button
             className="findButton"

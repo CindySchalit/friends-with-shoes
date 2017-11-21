@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
 import { withRouter } from 'react-router-dom'
 
+import { findShoeThunk } from '../actions'
 import styles from './styles/findShoe.css'
 
 class FindShoe extends Component {
@@ -22,6 +23,12 @@ class FindShoe extends Component {
     this.validateForm = this.validateForm.bind(this)
   }
 
+  componentWillReceiveProps(nextProps) {
+    if(nextProps !== this.props) {
+      console.log('nextProps:', nextProps)
+    }
+  }
+
   handleChange(e) {
     this.setState({
       [e.target.id]: e.target.value
@@ -29,8 +36,10 @@ class FindShoe extends Component {
   }
 
   handleSubmit(e) {
+    const shoeSeekingPartner = this.state
+
     e.preventDefault()
-    console.log('form submitted')
+    this.props.findShoeThunk(shoeSeekingPartner)
   }
 
   validateForm() {

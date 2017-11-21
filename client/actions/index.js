@@ -4,12 +4,20 @@ const API_URL = 'http://localhost:8000/api'
 
 /* action types */
 export const GET_SHOES = 'GET_SHOES'
+export const FIND_SHOE = 'FIND_SHOE'
 
 /* action creators */
 const getShoes = shoes => {
   return {
     type: GET_SHOES,
     shoes
+  }
+}
+
+const findShoe = matchingShoe => {
+  return {
+    type: FIND_SHOE,
+    matchingShoe
   }
 }
 
@@ -20,5 +28,14 @@ export const getShoesThunk = () =>
       .then(res => {
         console.log('got shoes from db')
         dispatch(getShoes(res.data))
+      })
+      .catch(error => console.log(error))
+
+export const findShoeThunk = () =>
+  dispatch =>
+    axios.get(`${API_URL}/shoes/find`)
+      .then(res => {
+        console.log('front end: got matching shoe from db')
+        dispatch(findShoe(res.data))
       })
       .catch(error => console.log(error))

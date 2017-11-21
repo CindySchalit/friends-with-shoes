@@ -15,4 +15,13 @@ router.get('/', (req, res, next) => {
   .catch(next)
 })
 
+router.get('/find', (req, res, next) => {
+  Shoe.findAll()
+  .then(shoes => {
+    console.log('back end: got matching shoe from db')
+    res.send(shoes)
+  })
+  .catch(next)
+})
+
 module.exports = router

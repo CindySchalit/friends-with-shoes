@@ -5,7 +5,7 @@ import { render } from 'react-dom'
 import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
-import FindShoe from './FindShoe.jsx'
+import FindShoe from '../containers/FindShoe.jsx'
 import Shoes from '../containers/Shoes.jsx'
 
 import Footer from './Footer.jsx'

@@ -1,7 +1,8 @@
-import { GET_SHOES } from '../actions'
+import { GET_SHOES, FIND_SHOE } from '../actions'
 
 const initialShoesState = {
   shoes: [],
+  matchingShoe: {}
 }
 
 const shoesReducer = (state=initialShoesState, action) => {
@@ -10,6 +11,10 @@ const shoesReducer = (state=initialShoesState, action) => {
   switch (action.type) {
     case GET_SHOES:
       newState.shoes = action.shoes
+      break;
+
+    case FIND_SHOE:
+      newState.matchingShoe = action.matchingShoe
       break;
 
     default:

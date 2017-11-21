@@ -25,7 +25,9 @@ class Shoes extends Component {
 
     return(
       <div>
-        <h1>Shoes Who Need Friends</h1>
+        <h2 className="h2-Shoes">Solitary Soles</h2>
+        <p className="paragraph-Shoes">These shoes are looking for their sole-mates.</p>
+
         <div className="Grid-Container-Shoes">
           <Grid fluid={true} className="Grid-Shoes">
             {
@@ -38,15 +40,23 @@ class Shoes extends Component {
                         <Image className="Image-Shoes" src={shoe.image} rounded responsive={true}/>
                       </div>
 
-                      <h4 className="header-Shoes">{shoe.shoeBrand}</h4>
+                      <h4 className="brand-Shoes">{shoe.shoeBrand}</h4>
 
-                      <h5 className="header-Shoes italics-Shoes">{shoe.shoeName}</h5>
+                      <h4 className="name-Shoes">{shoe.shoeName}</h4>
 
-                      Gender: {shoe.gender}
-                      <br />
-                      Size: {shoe.size}
-                      <br />
-                      Color: {shoe.color}
+                      <div className="shoesWrapper">
+                        <div className="shoesLeft">
+                          Gender: {shoe.gender}
+                          <br />
+                          Size: {shoe.size}
+                        </div>
+                        <div className="shoesRight">
+                          Color: {shoe.color}
+                          <br />
+                          Foot: {shoe.foot}
+                        </div>
+                      </div>
+
                     </Col>
                   )
                 }

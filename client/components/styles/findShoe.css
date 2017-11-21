@@ -1,0 +1,51 @@
+@media all and (min-width: 480px) {
+  .h2-findShoe {
+    color: #673ab7;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .findShoe {
+    padding: 0 0;
+    background-color: #9e9e9e1c;
+  }
+
+  .findShoe form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .findButton {
+    font-weight: bold;
+    color: #ffeb3b;
+    background-color: #00bcd4;
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+
+  .findButton:hover {
+    font-weight: bold;
+    color: #00bcd4;
+    background-color: #ffeb3b;
+    margin-bottom: 100px;
+  }
+
+  .findButton:focus {
+    font-weight: bold;
+    color: #00bcd4;
+    background-color: #ffeb3b;
+    margin-bottom: 100px;
+  }
+
+  .control-label-findShoe {
+    color: #673ab7;
+    font-size: 1.25em;
+  }
+
+  .form-control-findShoe {
+    border: 1px solid #FF5722;
+    background-color: #00bcd42b;
+  }
+}

@@ -1,32 +1,24 @@
-.aboutHeader {
-  padding-bottom: 20px;
-  color: #673ab7;
-  text-align: center;
-  font-weight: bolder;
-}
-
 .aboutParagraph {
   color: #673ab7;
   text-align: left;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
   font-weight: bolder;
   font-size: large;
 }
 
+.aboutParagraphFirst {
+  padding-top: 50px;
+}
+
 .aboutParagraphLast {
-  color: #673ab7;
-  text-align: left;
-  padding-left: 75px;
-  padding-right: 75px;
   padding-bottom: 30px;
-  font-weight: bolder;
-  font-size: large;
 }
 
 .aboutImage {
   display: block;
   margin: auto;
-  width: 67%;
+  width: 80%;
   background-color: white;
+  margin-bottom: 100px;
 }

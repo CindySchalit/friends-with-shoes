@@ -1,14 +1,15 @@
 .ul-NavBar {
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding: 0;
   overflow: hidden;
   background-color: #00bcd4;
-  font-family: monospace;
   font-size: x-large;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: left;
+  font-family: cursive;
 }
 
 .li-NavBar {
@@ -53,4 +54,22 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: #673ab7;
+}
+
+.Image-NavBar {
+  background-image: url("../../../public/shoeRackTrans.png");
+  background-repeat: repeat;
+  background-position: right top;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid #ff5722;
+}
+
+.Header-NavBar {
+  color: #ff5722;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 3.5em;
 }

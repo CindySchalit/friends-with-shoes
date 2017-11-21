@@ -31,11 +31,10 @@ export const getShoesThunk = () =>
       })
       .catch(error => console.log(error))
 
-export const findShoeThunk = () =>
+export const findShoeThunk = shoe =>
   dispatch =>
-    axios.get(`${API_URL}/shoes/find`)
+    axios.post(`${API_URL}/shoes/find`, shoe)
       .then(res => {
-        console.log('front end: got matching shoe from db')
         dispatch(findShoe(res.data))
       })
       .catch(error => console.log(error))

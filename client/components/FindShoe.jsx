@@ -23,12 +23,6 @@ class FindShoe extends Component {
     this.validateForm = this.validateForm.bind(this)
   }
 
-  componentWillReceiveProps(nextProps) {
-    if(nextProps !== this.props) {
-      console.log('nextProps:', nextProps)
-    }
-  }
-
   handleChange(e) {
     this.setState({
       [e.target.id]: e.target.value
@@ -58,7 +52,7 @@ class FindShoe extends Component {
               className="form-control-findShoe"
               type="text"
               value={this.state.shoeBrand}
-              placeholder="Nike"
+              placeholder="Plos Feet"
               onChange={this.handleChange}
             />
           </FormGroup>
@@ -69,7 +63,7 @@ class FindShoe extends Component {
               className="form-control-findShoe"
               type="text"
               value={this.state.shoeName}
-              placeholder="Air Jordan"
+              placeholder="Assymetric Saurus Raurus"
               onChange={this.handleChange}
             />
           </FormGroup>
@@ -91,7 +85,7 @@ class FindShoe extends Component {
               className="form-control-findShoe"
               type="text"
               value={this.state.size}
-              placeholder="7.5"
+              placeholder="12"
               onChange={this.handleChange}
             />
           </FormGroup>
@@ -102,7 +96,7 @@ class FindShoe extends Component {
               className="form-control-findShoe"
               type="text"
               value={this.state.color}
-              placeholder="Black"
+              placeholder="Blue"
               onChange={this.handleChange}
             />
           </FormGroup>

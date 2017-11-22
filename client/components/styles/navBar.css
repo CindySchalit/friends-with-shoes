@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: left;
   font-family: cursive;
+  position: fixed;
+  min-width: 100%;
 }
 
 .li-NavBar {
@@ -59,8 +61,8 @@ a:active {
 .Image-NavBar {
   background-image: url("../../../public/shoeRackTrans.png");
   background-repeat: repeat;
-  background-position: right top;
-  height: 200px;
+  background-position: center top;
+  height: 250px;
   line-height: 200px;
   text-align: center;
   border: 1px solid #ff5722;
@@ -69,7 +71,7 @@ a:active {
 .Header-NavBar {
   color: #ff5722;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   line-height: normal;
   font-size: 3.5em;
 }

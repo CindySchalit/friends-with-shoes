@@ -12,14 +12,16 @@
   font-family: cursive;
   position: fixed;
   min-width: 100%;
+  z-index: 2;
 }
 
 .li-NavBar {
+  border-right: 1px solid #ff5722;
   float: left;
 }
 
 .li-NavBar:last-child {
-  border-right: none;
+  border-right: 1px solid #ff5722;
 }
 
 .nav-NavBar {

@@ -5,8 +5,9 @@ import { render } from 'react-dom'
 import NavBar from './NavBar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
-import FindShoe from '../containers/FindShoe.jsx'
 import Shoes from '../containers/Shoes.jsx'
+import FindShoe from '../containers/FindShoe.jsx'
+import Match from '../containers/Match.jsx'
 
 import Footer from './Footer.jsx'
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route exact path="/about" component={ About } />
         <Route exact path="/shoes" render={ () => <Shoes /> } />
         <Route exact path="/find" render={ () => <FindShoe /> } />
+        <Route exact path="/match" render={ () => <Match /> } />
       </Switch>
 
       <Footer />

@@ -26,7 +26,6 @@ export const getShoesThunk = () =>
   dispatch =>
     axios.get(`${API_URL}/shoes`)
       .then(res => {
-        console.log('got shoes from db')
         dispatch(getShoes(res.data))
       })
       .catch(error => console.log(error))

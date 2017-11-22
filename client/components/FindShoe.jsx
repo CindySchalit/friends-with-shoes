@@ -30,10 +30,9 @@ class FindShoe extends Component {
   }
 
   handleSubmit(e) {
-    const shoeSeekingPartner = this.state
-
     e.preventDefault()
-    this.props.findShoeThunk(shoeSeekingPartner)
+    this.props.findShoeThunk(this.state)
+    this.props.history.push('/match')
   }
 
   validateForm() {
